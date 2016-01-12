@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainController.swift
 //  flick_finder
 //
 //  Created by Eleanor Stribling on 1/12/16.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(red: 0/255, green: 141/255, blue: 163/255, alpha: 1.0)
     }
 
     override func didReceiveMemoryWarning() {
