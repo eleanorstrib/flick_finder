@@ -22,6 +22,8 @@ class MainController: UIViewController {
     
     @IBOutlet weak var longSearchField: UITextField!
     @IBOutlet weak var longSearchLabel: UILabel!
+    @IBOutlet weak var latLongSearchSubmit: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0/255, green: 141/255, blue: 163/255, alpha: 1.0)
