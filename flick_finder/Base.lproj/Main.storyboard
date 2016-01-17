@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--MainController-->
@@ -40,7 +41,7 @@
                                     <constraint firstAttribute="height" constant="280" id="71e-b5-38U"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4q-Xo-RaB">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4q-Xo-RaB">
                                 <rect key="frame" x="50" y="535" width="133" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="Idv-bA-pRH"/>
@@ -49,12 +50,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LRW-Am-Q1D">
-                                <rect key="frame" x="200" y="534" width="133" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LRW-Am-Q1D">
+                                <rect key="frame" x="195" y="534" width="133" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB1-TG-Crf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB1-TG-Crf">
                                 <rect key="frame" x="85" y="566" width="63" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="63" id="SjV-HM-Z5S"/>
@@ -64,21 +65,24 @@
                                 <color key="textColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Longitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="77" translatesAutoresizingMaskIntoConstraints="NO" id="NSg-YS-EbR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Longitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="77" translatesAutoresizingMaskIntoConstraints="NO" id="NSg-YS-EbR">
                                 <rect key="frame" x="216" y="566" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPO-cW-pyM">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPO-cW-pyM">
                                 <rect key="frame" x="325" y="491" width="50" height="29"/>
                                 <state key="normal" image="search"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDR-tT-rxI">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDR-tT-rxI">
                                 <rect key="frame" x="325" y="535" width="50" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="wgh-Cv-Zby"/>
+                                </constraints>
                                 <state key="normal" image="search"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLE-WJ-99Y">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLE-WJ-99Y">
                                 <rect key="frame" x="50" y="491" width="277" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Bl9-f1-uYp"/>
@@ -105,12 +109,15 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NSg-YS-EbR" secondAttribute="bottom" constant="237" id="AwW-yE-PcD"/>
                             <constraint firstItem="LRW-Am-Q1D" firstAttribute="leading" secondItem="Z4q-Xo-RaB" secondAttribute="trailing" constant="34" id="Ceg-Gz-s3g"/>
                             <constraint firstItem="Opk-Ms-gIi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="EG8-YE-e2V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WDR-tT-rxI" secondAttribute="trailing" constant="19" id="HLM-Cx-osO"/>
                             <constraint firstItem="NSg-YS-EbR" firstAttribute="leading" secondItem="cB1-TG-Crf" secondAttribute="trailing" constant="73" id="Jgj-o1-1au"/>
                             <constraint firstItem="Z4q-Xo-RaB" firstAttribute="top" secondItem="QLE-WJ-99Y" secondAttribute="bottom" constant="15" id="L3s-r0-bbC"/>
                             <constraint firstItem="PPO-cW-pyM" firstAttribute="bottom" secondItem="QLE-WJ-99Y" secondAttribute="bottom" id="PFA-nX-a5f"/>
                             <constraint firstItem="QLE-WJ-99Y" firstAttribute="trailing" secondItem="LRW-Am-Q1D" secondAttribute="trailing" constant="12" id="XJc-zB-VNP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WDR-tT-rxI" secondAttribute="trailing" constant="19" id="XUN-8y-NG5"/>
                             <constraint firstItem="WQB-iI-wVb" firstAttribute="centerX" secondItem="Opk-Ms-gIi" secondAttribute="centerX" id="ZhO-k0-sPF"/>
                             <constraint firstItem="WDR-tT-rxI" firstAttribute="bottom" secondItem="LRW-Am-Q1D" secondAttribute="bottom" id="dAg-tj-rB8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PPO-cW-pyM" secondAttribute="trailing" constant="19" id="dmu-n2-OWZ"/>
                             <constraint firstItem="PPO-cW-pyM" firstAttribute="leading" secondItem="WDR-tT-rxI" secondAttribute="leading" constant="34" id="gmq-e9-4Ji"/>
                             <constraint firstItem="PPO-cW-pyM" firstAttribute="centerY" secondItem="QLE-WJ-99Y" secondAttribute="centerY" id="hU8-ha-V8b"/>
                             <constraint firstItem="WQB-iI-wVb" firstAttribute="top" secondItem="Opk-Ms-gIi" secondAttribute="bottom" constant="28" id="inH-Ws-CHt"/>
@@ -119,10 +126,22 @@
                             <constraint firstItem="LRW-Am-Q1D" firstAttribute="top" secondItem="QLE-WJ-99Y" secondAttribute="bottom" constant="15" id="kZe-L0-ds2"/>
                             <constraint firstItem="NSg-YS-EbR" firstAttribute="baseline" secondItem="cB1-TG-Crf" secondAttribute="baseline" id="mmy-wa-b1a"/>
                             <constraint firstItem="WDR-tT-rxI" firstAttribute="centerY" secondItem="LRW-Am-Q1D" secondAttribute="centerY" id="nVY-gb-3Eh"/>
+                            <constraint firstItem="WDR-tT-rxI" firstAttribute="leading" secondItem="LRW-Am-Q1D" secondAttribute="trailing" constant="-3" id="p0E-hY-e2w"/>
                             <constraint firstItem="WDR-tT-rxI" firstAttribute="bottom" secondItem="Z4q-Xo-RaB" secondAttribute="bottom" id="rOt-U1-RVI"/>
                             <constraint firstItem="QLE-WJ-99Y" firstAttribute="top" secondItem="WQB-iI-wVb" secondAttribute="bottom" constant="32" id="vHl-DV-fdG"/>
                             <constraint firstItem="PPO-cW-pyM" firstAttribute="leading" secondItem="QLE-WJ-99Y" secondAttribute="trailing" constant="13" id="y9a-gy-ehG"/>
+                            <constraint firstItem="WDR-tT-rxI" firstAttribute="top" secondItem="PPO-cW-pyM" secondAttribute="bottom" constant="15" id="yMb-2o-kY9"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7LF-y3-Mur"/>
+                                <exclude reference="gmq-e9-4Ji"/>
+                                <exclude reference="HLM-Cx-osO"/>
+                                <exclude reference="dAg-tj-rB8"/>
+                                <exclude reference="nVY-gb-3Eh"/>
+                                <exclude reference="rOt-U1-RVI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
